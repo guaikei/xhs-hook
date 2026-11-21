@@ -6,6 +6,11 @@ name: xhs-hook
 description: "小红薯文案钩子语料库（只读）：关键词搜笔记、爆款选题、笔记详情、评论舆情、博主作品、粉丝获赞与收藏，输出 JSON，不登录不发布。触发词：小红书、小红薯、xhs、rednote、笔记链接、博主主页、竞品监控、KOL筛选、评论分析。用户要查小红书笔记、评论、选题、竞品或舆情时使用；抖音、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.2.3
+display_name: "小红薯文案钩子｜爆款标题·开头3秒·口播脚本·语料复用"
+display_name_en: "Xiaohongshu Hook"
+description_zh: "小红薯文案钩子语料库（只读，不登录你的小红书账号，不发布不点赞不评论，无封号风险）：把公开笔记的标题文案、评论区高赞话术、博主历史作品批量取回，统一输出结构化 JSON，可直接交给 AI 做标题模板复用、开头 3 秒钩子拆解、口播脚本改写与语料库沉淀。\n五类取数能力：①关键词搜笔记，支持图文/视频筛选、综合/最新/最多点赞排序与 1 天/一周/半年时间范围；②单篇笔记详情：标题、正文、图片、互动、作者；③评论抓取，可按近 N 天过滤做高赞话术归集；④博主作品列表，看对标账号最近发了什么；⑤博主粉丝、获赞、收藏数据（--limit 0 只取资料）算互动比。\n钩子打法：按点赞排序找高赞开头，从评论捞用户原话与痛点，用「最新 + 一天内」定当日选题。\n规模：按量 Token 单次最多 10000 条；包月搜索 ≤40、作品 ≤30、评论 ≤20，超限返回 PLAN_LIMIT。仅需 Node.js 16.14+ 与 GUAIKEI_API_TOKEN，零第三方依赖，国内直连。"
+description_en: "Read-only Xiaohongshu copywriting-hook corpus, no login, no ban risk. Pull public note captions, top-comment phrasing and creator post history in bulk as JSON, so AI can reuse title templates, deconstruct the first-3-second hook and rewrite spoken scripts.\nFive capabilities: 1) Keyword search over notes with image/video filters, relevance/newest/most-liked sorting and 1-day/week/half-year windows. 2) Note detail: title, body, images, engagement, author. 3) Comment scraping with a day-range filter to harvest high-like phrasing. 4) Creator post listing for benchmark accounts. 5) Follower, like and collection stats (--limit 0 = profile only).\nHook playbook: sort by likes for strong openings, mine comments for original wording, use newest plus a 1-day window for daily topics.\nScale: pay-as-you-go up to 10,000 items per call; monthly caps search 40, posts 30, comments 20, then PLAN_LIMIT. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN; zero deps."
+author: "新郑市怪奇信息技术工作室"
 category: 数据分析
 homepage: https://www.guaikei.com
 metadata:
